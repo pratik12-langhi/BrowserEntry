@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Boss!</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="script.js"> </script>
+    <link rel="icon" href="me.png" type="image/png">
+
+</head>
+
+<body class="w-10/12 mx-auto overflow-x-hidden ">
+    <h1 class=" text-4xl font-bold text-center mt-12">
+        Welcome Boss, all systems are running smoothly
+    </h1>
+    <div
+        class="absolute left-0  h-screen w-18 top-0 flex flex-col justify-start items-center rounded-br-3xl shadow-md sidebar">
+        <p id="time" class="font-semibold text-xl my-6">19:11
+        </p>
+        <div class="flex flex-col gap-1 my-2">
+            <a href="https://vercel.com" target="_blank" class="tooltip" data-tip="Vercel">
+                <img src="svg/Vercel.ico" alt="Vercel" class="w-12 h-12 hover:rotate-90 transition" />
+            </a>
+            <a href="https://supabase.com/dashboard/" target="_blank" class="tooltip" data-tip="Supabase">
+                <img src="svg/supabase.png" alt="Supabase" class="w-12 h-12  hover:rotate-90 transition" />
+            </a>
+            <a href="https://dashboard.clerk.com/" target="_blank" class="tooltip" data-tip="Clerk">
+                <img src="svg/Clerk.ico" alt="Clerk" class="w-12 h-12  hover:rotate-90 transition" />
+            </a>
+            <a href="https://lucide.dev/icons/" target="_blank" class="tooltip" data-tip="Lucide Icons">
+                <img src="svg/lucide.ico" alt="Lucide" class="w-12 h-12  hover:rotate-90 transition" />
+            </a>
+            <a href="https://fonts.google.com" target="_blank" class="tooltip" data-tip="Google Fonts">
+                <img src="svg/font.svg" alt="Fonts" class="w-12 h-12 hover:rotate-90 transition" />
+            </a>
+
+        </div>
+        <hr width="50px" class="rounded-full w-full">
+        <div class="flex flex-col gap-1 my-2">
+            <a href="https://vspringboard.vercel.app" target="_target" class="tooltip" data-tip="vSpringboard">
+                <img src="svg/vspri.png" class="w-12 h-12 " />
+            </a>
+            <a href="https://kalaa-bliss.vercel.app" target="_target" class="tooltip" data-tip="Kalaa Bliss Website">
+                <img src="svg/kalaa.jpg" class="w-12 h-12 " />
+            </a>
+            <a href="file:///F:/Projects/Suspense/index.html" target="_target" class="tooltip"
+                data-tip="Project Suspense">
+                <img src="svg/sample.svg" class="w-12 h-12 opacity-50" />
+            </a>
+            <a href="file:///F:/Projects/Quiz/index.htm" class="tooltip" data-tip="Project Quiz">
+                <img src="svg/sample.svg" class="w-12 h-12 opacity-50" />
+            </a>
+            <a href="file:///F:/Projects/weather%20app/index.html" class="tooltip" data-tip="Project Weather">
+                <img src="svg/sample.svg" class="w-12 h-12 opacity-50" />
+            </a>
+
+        </div>
+    </div>
+
+    <div>
+        <div class="flex justify-center items-center mt-12 mb-8 gap-8">
+            <img src="me.png" onmouseover="this.src='notme.png';" onmouseleave="this.src='me.png';" class="rounded-full"
+                alt="" id="me">
+            <div class=" flex flex-col justify-start gap-2 items-start
+            align-start self-start">
+                <h2 class=" text-2xl font-bold text-center mt-12 text-start">"Sleep less, Code more"</h2>
+                <!-- <div class="jugv hidden gap-2">
+                    <a href="https://www.canva.com/" target="_blank">
+                        <img src="svg/prj/kalaa.jpg" alt="">
+                    </a>
+                    <a href="https://www.canva.com/" target="_blank">
+                        <img src="svg/prj/spring.ico" alt="">
+                    </a>
+                </div> -->
+
+                <div class="jugv flex gap-4">
+                    <a href="https://spotify.com" target="_blank" class="tooltip" data-tip="Spotify">
+                        <img src="svg/spotify.png" class="w-10 h-10 hover:rotate-90 transition" />
+                    </a>
+                    <a href="https://mail.google.com" target="_blank" class="tooltip" data-tip="Gmail">
+                        <img src="svg/gmail.ico" class="w-10 h-10 hover:rotate-90 transition" />
+                    </a>
+                    <a href="https://web.arattai.in" target="_blank" class="tooltip" data-tip="Arratai">
+                        <img src="svg/arratai.ico" class="w-10 h-10 hover:rotate-90 transition" />
+                    </a>
+                    <a href="https://github.com/Teamcrazxy/" target="_blank" class="tooltip" data-tip="Team Crazxy">
+                        <img src="svg/TCD.png" class="w-10 h-10 hover:rotate-90 transition" />
+                    </a> <a href="https://gppune.ac.in/" target="_blank" class="tooltip"
+                        data-tip="Gandu Polytechnic Pune">
+                        <img src="https://gppune.ac.in/images/gpnewlogo.png"
+                            class="w-10 h-10 hover:rotate-90 transition" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div
+        class="flex flex-col-reverse items-center absolute right-8 bg-white bottom-8 shadow-md rounded-3xl border-gray-300">
+        <button onmouseover={show();} onmouseout={hide();}
+            class="rounded-full p-2 hover:shadow-lg transition-shadow duration-300 flex flex-col items-center gap-2">
+            <img src="svg/layers.svg" alt="">
+            <div id="drag" class="hidden flex-col gap-2">
+                <a href="https://canva.com" target="_blank" class="tooltip" data-tip="Canva">
+                    <img src="svg/canva.webp" class="w-12 h-12 transition" /></a>
+                <a href="https://dribbble.com" target="_blank" class="tooltip" data-tip="Dribbble">
+                    <img src="svg/Dribbble.png" class="w-12 h-12 transition" /></a>
+                <a href="https://pinterest.com" target="_blank" class="tooltip" data-tip="Pinterest">
+                    <img src="svg/pinterest.png" class="w-12 h-12 transition" /></a>
+                <a href="https://excalidraw.com" target="_blank" class="tooltip" data-tip="Excalidraw">
+                    <img src="svg/excel draws.png" class="w-12 h-12  transition" /></a>
+                <a href="https://figma.com" target="_blank" class="tooltip" data-tip="Figma">
+                    <img src="svg/figma.svg" class="w-12 h-12 transition" /></a>
+            </div>
+        </button>
+    </div>
+
+
+
+    <!-- </button> -->
+
+    <div>
+        <div class="flex justify-between gap-8 mt-12 mb-20">
+
+            <div class="card">
+                <h2>Professional</h2>
+                <div class="flex flex-col gap-2">
+
+                    <a href="https://linkedin.com" target="_blank"
+                        class="flex items-center gap-4 p-4 border border-gray-300 rounded-xl hover:shadow-lg transition-shadow duration-300 cursor-pointer bg-white"
+                        data-tip="LinkedIn">
+                        <img src="svg/linkedin.svg" class="w-8 h-8" /> <span class="font-medium">LinkedIn</span>
+                    </a>
+                    <a href="https://github.com" target="_blank"
+                        class="flex items-center gap-4 p-4 border border-gray-300 rounded-xl hover:shadow-lg transition-shadow duration-300 cursor-pointer bg-white"
+                        data-tip="GitHub">
+                        <img src="svg/github.svg" class="w-8 h-8" /> <span class="font-medium">GitHub</span>
+                    </a>
+                    <a href="vscode://"
+                        class="flex items-center gap-4 p-4 border border-gray-300 rounded-xl hover:shadow-lg transition-shadow duration-300 cursor-pointer bg-white"
+                        data-tip="VS Code">
+                        <img src="svg/vs.ico" class="w-8 h-8" /> <span class="font-medium">VS Code</span>
+                    </a>
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+            <div class="card">
+                <h2>Ai Agents</h2>
+                <div class="flex flex-col gap-2">
+                    <a href="https://chat.openai.com" target="_blank"
+                        class="flex items-center gap-4 p-4 border border-gray-300 rounded-xl hover:shadow-lg transition-shadow duration-300 cursor-pointer bg-white"
+                        data-tip="ChatGPT">
+                        <img src="svg/chatgpt.png" class="w-8 h-8" /> <span class="font-medium">ChatGPT</span>
+                    </a>
+                    <a href="https://claude.ai" target="_blank"
+                        class="flex items-center gap-4 p-4 border border-gray-300 rounded-xl hover:shadow-lg transition-shadow duration-300 cursor-pointer bg-white"
+                        data-tip="Claude">
+                        <img src="svg/claude.svg" class="w-8 h-8" /> <span class="font-medium">Claude</span>
+                    </a>
+                    <a href="https://gemini.google.com" target="_blank"
+                        class="flex items-center gap-4 p-4 border border-gray-300 rounded-xl hover:shadow-lg transition-shadow duration-300 cursor-pointer bg-white"
+                        data-tip="Gemini">
+                        <img src="svg/gemini.png" class="w-8 h-8" /> <span class="font-medium">Gemini</span>
+                    </a>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+            <div class="card">
+                <h2>Documentation</h2>
+                <div class="flex flex-col gap-2">
+                    <a href="https://nextjs.org/docs" target="_blank"
+                        class="flex items-center gap-4 p-4 border border-gray-300 rounded-xl hover:shadow-lg transition-shadow duration-300 cursor-pointer bg-white"
+                        data-tip="Next.js">
+                        <img src="svg/nextjs.ico" class="w-8 h-8" /> <span class="font-medium">Next.js</span>
+                    </a>
+                    <a href="https://tailwindcss.com/docs/font-weight" target="_blank"
+                        class="flex items-center gap-4 p-4 border border-gray-300 rounded-xl hover:shadow-lg transition-shadow duration-300 cursor-pointer bg-white"
+                        data-tip="Tailwind CSS">
+                        <img src="svg/tailwind.ico" class="w-8 h-8" /> <span class="font-medium">Tailwind CSS</span>
+                    </a>
+                    <a href="https://react.dev/learn" target="_blank"
+                        class="flex items-center gap-4 p-4 border border-gray-300 rounded-xl hover:shadow-lg transition-shadow duration-300 cursor-pointer bg-white"
+                        data-tip="React">
+                        <img src="svg/react.png" class="w-8 h-8" /> <span class="font-medium">React</span>
+                    </a>
+                    <a href="https://stackoverflow.com" target="_blank"
+                        class="flex items-center gap-4 p-4 border border-gray-300 rounded-xl hover:shadow-lg transition-shadow duration-300 cursor-pointer bg-white"
+                        data-tip="Stack Overflow">
+                        <img src="svg/stack.ico" class="w-8 h-8" /> <span class="font-medium">Stack Overflow</span>
+                    </a>
+                    <a href="https://nodejs.org/en/docs" target="_blank"
+                        class="flex items-center gap-4 p-4 border border-gray-300 rounded-xl hover:shadow-lg transition-shadow duration-300 cursor-pointer bg-white"
+                        data-tip="Node.js">
+                        <img src="svg/nodejs.png" class="w-8 h-8" /> <span class="font-medium">Node.js</span>
+                    </a>
+                </div>
+            </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+</body>
+
+</html>
