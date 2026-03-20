@@ -43,3 +43,55 @@ BrowserEntry/
 ```
 
 ---
+
+## ⚙️ Installation / Setup
+
+### Option 1 — Use it directly (Live)
+
+Just visit: [https://workvaibhavk.github.io/BrowserEntry/](https://workvaibhavk.github.io/BrowserEntry/)
+
+---
+
+### Option 2 — Run Locally
+
+**Step 1: Clone the repository**
+```bash
+git clone https://github.com/workvaibhavk/BrowserEntry.git
+```
+
+**Step 2: Navigate into the project folder**
+```bash
+cd BrowserEntry
+```
+
+**Step 3: Add your assets**  
+Place all your icons and images inside the `svg/` folder as referenced in `index.html`. Replace `me.png` and `notme.png` with your own profile pictures.
+
+**Step 4: Open in browser**  
+Just double-click `index.html` or open it via your browser:
+```
+File → Open File → index.html
+```
+No server, no npm install, no build step required.
+
+---
+
+### Option 3 — Set as Browser Start Page
+
+**Chrome:**
+1. Go to `Settings`
+2. Under **On startup**, select **Open a specific page or set of pages**
+3. Click **Add a new page**
+4. Paste: `https://workvaibhavk.github.io/BrowserEntry/`
+
+**Firefox:**
+1. Go to `Settings → Home`
+2. Set **Homepage and new windows** to **Custom URLs**
+3. Paste: `https://workvaibhavk.github.io/BrowserEntry/`
+
+**Edge:**
+1. Go to `Settings → Start, home, and new tabs`
+2. Under **When Edge starts**, choose **Open these pages**
+3. Add the URL
+
+---
