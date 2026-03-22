@@ -139,3 +139,124 @@ Want to make it your own? Here's what to change:
 - *Clock update interval* — In script.js, change 55000 in setInterval(updateTime, 55000) to your preferred ms value.
 
 ---
+## 🤝 Contributing
+
+Contributions are welcome! Follow the steps below to go from *Fork* to *Pull Request*.
+
+---
+
+### Step 1 — Fork the Repository
+
+1. Go to the repository: [github.com/workvaibhavk/BrowserEntry](https://github.com/workvaibhavk/BrowserEntry)
+2. Click the *Fork* button at the top-right corner of the page.
+3. This creates a copy of the repository under your own GitHub account.
+
+---
+
+### Step 2 — Clone Your Fork
+
+bash
+git clone https://github.com/<your-username>/BrowserEntry.git
+cd BrowserEntry
+
+
+Replace <your-username> with your actual GitHub username.
+
+---
+
+### Step 3 — Create a New Branch
+
+Always create a new branch for your changes. Never work directly on main.
+
+bash
+git checkout -b feature/your-feature-name
+
+
+Example:
+bash
+git checkout -b feature/add-dark-mode
+
+
+---
+
+### Step 4 — Make Your Changes
+
+Edit the files as needed:
+- index.html for layout or link changes
+- style.css for styling changes
+- script.js for JavaScript logic changes
+- svg/ folder for new icons or images
+
+---
+
+### Step 5 — Stage and Commit Your Changes
+
+bash
+git add .
+git commit -m "feat: describe what you changed"
+
+
+Use clear, short commit messages. Examples:
+- feat: add dark mode toggle
+- fix: tooltip alignment on mobile
+- chore: update sidebar icons
+
+---
+
+### Step 6 — Push to Your Fork
+
+bash
+git push origin feature/your-feature-name
+
+
+---
+
+### Step 7 — Open a Pull Request
+
+1. Go to your forked repo on GitHub: github.com/<your-username>/BrowserEntry
+2. You'll see a banner saying *"Compare & pull request"* — click it.
+3. Make sure the base repository is set to workvaibhavk/BrowserEntry and base branch is main.
+4. Add a clear *title* and *description* explaining what your PR does.
+5. Click *"Create pull request"* — done! 🎉
+
+---
+
+### Step 8 — Wait for Review
+
+The maintainer will review your PR. You may be asked to make changes. If so:
+1. Make the requested edits locally
+2. Commit and push to the same branch
+3. The PR will update automatically
+
+---
+
+### ✅ Contribution Guidelines
+
+- Keep changes focused — one feature or fix per PR.
+- Do not commit unnecessary files (.DS_Store, node_modules, etc.).
+- Test your changes locally before submitting.
+- Be respectful and constructive in all discussions.
+
+---
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+## 👤 Author
+
+*Vaibhav K*  
+GitHub: [@workvaibhavk](https://github.com/workvaibhavk)  
+Team: [Team Crazxy](https://github.com/Teamcrazxy/)
+
+---
+
+## 🌟 Show Your Support
+
+If you like this project, consider giving it a ⭐ on GitHub — it helps a lot!
+
+---
+
+Built with ☕ and the motto: "Sleep less, Code more"
