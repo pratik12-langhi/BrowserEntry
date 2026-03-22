@@ -95,3 +95,47 @@ No server, no npm install, no build step required.
 3. Add the URL
 
 ---
+
+## 🧠 How It Works
+
+### updateTime()
+Reads the current system time and displays it in 24-hour format inside the #time element in the sidebar. Called once on page load via window.onload, then re-calls itself every 55 seconds using setInterval.
+
+### show()
+Triggered on onmouseover of the floating design tools button. Removes the hidden class and adds flex to the #drag element, making the drawer visible.
+
+### hide()
+Triggered on onmouseout. Reverses the action — removes flex and adds hidden back to collapse the drawer.
+
+### Profile Image Swap
+The <img> tag for the profile photo uses inline onmouseover and onmouseleave to swap between me.png and notme.png for a fun hover effect.
+
+### Tooltip System
+Tooltips are built entirely in CSS using the ::after pseudo-element on .tooltip class, reading the label from the data-tip attribute. No JavaScript needed.
+
+---
+
+## 🛠️ Built With
+
+| Technology | Purpose |
+|---|---|
+| HTML5 | Page structure and layout |
+| [Tailwind CSS (Browser CDN)](https://tailwindcss.com) | Utility-first styling |
+| CSS3 | Custom styles, tooltips, gradients |
+| Vanilla JavaScript | Clock, drawer toggle |
+| GitHub Pages | Hosting and deployment |
+
+---
+
+## 🔧 Customization Guide
+
+Want to make it your own? Here's what to change:
+
+- *Profile image* — Replace me.png and notme.png with your photos.
+- *Sidebar links* — Edit the <a> tags inside .sidebar in index.html.
+- *Cards* — Add or remove link entries inside the Professional, AI Agents, or Documentation cards.
+- *Quote* — Find "Sleep less, Code more" in index.html and replace with your own.
+- *Background* — In style.css, change the background-image gradient values on body.
+- *Clock update interval* — In script.js, change 55000 in setInterval(updateTime, 55000) to your preferred ms value.
+
+---
